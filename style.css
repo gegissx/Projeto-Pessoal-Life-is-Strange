@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F0E7;
+  font-family: "Zen Loop", cursive;
+  color: #331100;
+}
+
+/* header */
+header {
+  background-color: #E7E2D9;
+  height: 80px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #331100;
+  font-size: 18px;
+}
+
+
+/* botões do login e cadastro */
+.botoes {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.botoes a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+.login {
+  color: #331100;
+}
+
+.cadastro {
+  background-color: #331100;
+  color: #F5F0E7;
+}
+
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.hero-text h1 {
+  margin-left: 40px;
+  font-size: 80px;
+}
+
+.hero-text p{
+  margin-left: 40px;
+  font-size: 40px;
+}
+
+.hero-img img {
+  width: 250px;
+  transform: rotate(-5deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  margin-right: 100px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: row;
+  background: #E7E2D9;
+  padding: 20px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.card img{
+  display: flex;
+  justify-content: center;
+  align-items: row;
+  width: 250px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  margin-left: 100px;
+}
+
+.card h1{
+  font-size: 30px;
+}
+
+.card p{
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.destaque {
+  background: #A8D0D6;
+}
+
+
+
