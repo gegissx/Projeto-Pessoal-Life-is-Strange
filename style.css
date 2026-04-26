@@ -56,25 +56,25 @@ header {
 }
 
 
-/* HERO */
-.hero {
+/* inicio */
+.inicio {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 40px;
+  padding: 60px 80px;
 }
 
-.hero-text h1 {
+.inicio-texto h1 {
   margin-left: 40px;
   font-size: 80px;
 }
 
-.hero-text p{
+.inicio-texto p{
   margin-left: 40px;
   font-size: 40px;
 }
 
-.hero-img img {
+.inicio-img img {
   width: 250px;
   transform: rotate(-5deg);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -84,7 +84,7 @@ header {
 /* CARDS */
 .cards {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   padding: 40px;
 }
 
@@ -96,19 +96,23 @@ header {
   padding: 20px;
   flex: 1;
   border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .card img{
   display: flex;
   justify-content: center;
   align-items: row;
-  width: 250px;
+  width: 200px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   margin-left: 100px;
+  border-radius: 20px;
 }
 
 .card h1{
+  margin-left: 180px ;
   font-size: 30px;
+  padding-top: 0%;
 }
 
 .card p{
