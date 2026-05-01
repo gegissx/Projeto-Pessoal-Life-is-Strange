@@ -73,6 +73,12 @@ header {
   font-size: 80px;
 }
 
+.corpo img {
+  height: 850px;
+  margin-top: 200px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 .container{
   display: flex;
   width: 700px;
@@ -81,24 +87,6 @@ header {
   align-items: center;
   background-color: #E7E2D9;
 
-}
-
-/* imgs */
-
-.polaroid1 {
-  width: 250px;
-  transform: rotate(-5deg);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  margin-right: 100px;
-  justify-self: center;
-  margin-left: 150px;
-}
-
-.polaroid2 {
-  width: 200px;
-  transform: rotate(-5deg);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  margin-right: 200px;
 }
 
 
@@ -123,6 +111,5 @@ header {
 .login-img img {
   width: 250px;
   transform: rotate(-5deg);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   margin-right: 100px;
 }
