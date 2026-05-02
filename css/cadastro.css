@@ -39,6 +39,12 @@ header {
   gap: 10px;
 }
 
+.botoes p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .botoes a {
   text-decoration: none;
   padding: 8px 16px;
@@ -56,60 +62,111 @@ header {
 }
 
 
-/* área login*/
+/*corpo*/
 
 .corpo{
   display: flex;
-  justify-content: space-around;
+  flex-direction: center;
+  gap: 230px;
   align-items: center;
   width: 100%;
   height: 880px;
 }
 
-
-.corpo h1 {
-  display: flex;
-  align-items: top;
-  font-size: 80px;
-}
-
-.corpo img {
-  height: 850px;
-  margin-top: 200px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
 .container{
   display: flex;
-  width: 700px;
+  width: 400px;
   height: 700px;
-  justify-content: center;
-  align-items: center;
-  background-color: #E7E2D9;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-left: 200px;
+  margin-top: -130px;
+  padding: 45px;
 
 }
 
 
-/* login */
-.login {
+/* cadastro */
+.area-cadastro {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 80px;
+  padding: 25px;
+  flex-direction: column;
 }
 
-.login-texto h1 {
-  margin-left: 40px;
-  font-size: 80px;
-}
-
-.login-texto p{
-  margin-left: 40px;
+.area-cadastro h1 {
   font-size: 40px;
+  align-self: start;
 }
 
-.login-img img {
-  width: 250px;
-  transform: rotate(-5deg);
-  margin-right: 100px;
+.area-cadastro h3{
+  font-size: 25px;
+  align-self: start;
+  font-weight: normal;
 }
+
+
+.area-cadastro p{
+  font-size: 17px;
+  align-self: start;
+}
+
+.area-cadastro p1{
+  font-size: 25px;
+  align-self: start;
+}
+
+.inputs input{
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #E7E2D9;
+  background-color: #F5F0E7;
+  font-family: "Zen Loop", cursive;
+  font-size: 17px;
+}
+
+.inputs p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #709897;
+  color: #E7E2D9;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 15px 80px;
+  border-color: #709897;
+}
+
+/* polaroid */
+
+.polaroid {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  margin-top: -250px;
+}
+
+.polaroid img {
+  width: 320px;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+  transform: rotate(5deg);
+
+}
+
+/* Mensagens de erro */
+
+.mensagem_erro {
+  color: red;
+  font-size: 15px;
+}
+
