@@ -1,73 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Login - LisBlog</title>
 
     <!-- fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet"
-    />
-
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet" />
+</head>
 
   <body>
-    <!-- NavBar-->
-    <header>
-      <nav class="navBar">
-        <div class="titulo">
-          <h1>LISblog</h1>
-        </div>
-
-        <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="#">Posts</a>
-          <a href="#">Sobre</a>
-        </div>
-
-        <div class="botoes">
-          <p>Não tem conta?</p>
-          <a href="#" class="cadastro">Criar conta</a>
-        </div>
-      </nav>
-    </header>
-
     <div class="corpo">
 
-      <!--Aréa do cadastro-->
 
+      <!-- parte do login -->
       <div class="container">
+        <header>
+          <nav class="navBar">
+            <img class="logo" src="../imgs/Logo.png" alt="LisBlog" />
+            <div class="menu">
+              <a href="./index.html">Home</a>
+              <a href="#">Posts</a>
+              <a href="./sobre.html">Sobre</a>
+            </div>
+          </nav>
+        </header>
 
-        <div class="area-cadastro" >
+         <div class="area-cadastro">
+          <h1>Bem-Vindo de volta!</h1>
+          <h3>Continue sua jornada preenchendo as informações abaixo</h3>
 
-        <h1>Bem-vindo de volta!</h1>
-        <h3>Entre para continuar escrevendo sua história.</h3> <br><br>
-
-        <div class="inputs" >
-
-        <p>E-mail</p>
-        <input type="text" id="ipt_email" placeholder="✉ Insira seu e-mail"> <br> <br>
-
-        <p>Senha</p>
-        <input type="text" id="ipt_senha" placeholder="🔒︎ Insira sua senha"> <br><br>
-
+          <div class="inputs">
+            <p>E-mail<span id="erroEmail"></span></p>
+            <input
+              type="text"
+              id="ipt_email"
+              placeholder="✉ Insira seu e-mail"
+            />
+            <p>Senha<span id="erroSenha"></span></p>
+            <input
+              type="text"
+              id="ipt_senha"
+              placeholder="🔒︎ Insira sua senha"
+            />
+          </div>
+          <button class="botao" onclick="Logar()">Entrar</button>
         </div>
-
-
-         <button class="botao" onclick="CriarConta()">𖦹 Entrar</button>
-
-        </div>
-        </div>
-
-      <!--Polaroids-->
-
-      <div class="polaroid" >
-      <img src="../imgs/polaroid_ArcadiaBay.png" alt="">
+        <div id="texto"></div>
       </div>
 
+      <!-- parte da imagem -->
+      <div class="lado-imagem">
+        <div class="botoes">
+          <p>Ainda não está cadastrado?</p>
+          <a href="./cadastro.html" class="cadastro">Crie sua conta</a>
+        </div>
+      </div>
     </div>
-    
+
   </body>
 </html>

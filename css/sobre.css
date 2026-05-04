@@ -24,11 +24,21 @@ header {
   padding: 0 30px;
 }
 
+.logo{
+  height: 50px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.menu {
+  margin-left: 30px;
+}
+
 .menu a {
-  margin-left: 20px;
+  margin-left: 10px;
   text-decoration: none;
   color: #331100;
-  font-size: 18px;
+  font-size: 27px;
 }
 
 

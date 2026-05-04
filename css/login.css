@@ -8,157 +8,148 @@ body {
   background-color: #F5F0E7;
   font-family: "Zen Loop", cursive;
   color: #331100;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+.corpo {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F0E7;
 }
 
 /* header */
 header {
-  background-color: #E7E2D9;
-  height: 80px;
+  background-color: #F5F0E7;
+  padding: 20px 30px;
 }
 
 .navBar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 0 30px;
+  gap: 30px;
+}
+
+.logo{
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
 }
 
 .menu a {
-  margin-left: 20px;
-  text-decoration: none;
+ text-decoration: none;
   color: #331100;
-  font-size: 18px;
+  font-size: 22px
 }
 
 
-/* botões do login e cadastro */
-.botoes {
-  margin-left: auto;
-  display: flex;
-  gap: 10px;
-}
-
-.botoes p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.botoes a {
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-}
-    
-.login {
-  color: #331100;
-}
-
-.cadastro {
-  background-color: #331100;
-  color: #F5F0E7;
-}
-
-
-/*corpo*/
-
-.corpo{
-  display: flex;
-  flex-direction: center;
-  gap: 230px;
-  align-items: center;
-  width: 100%;
-  height: 880px;
-}
-
-.container{
-  display: flex;
-  width: 400px;
-  height: 700px;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-left: 200px;
-  margin-top: -130px;
-  padding: 45px;
-
-}
-
-
-/* cadastro */
+/* Área do login */
 .area-cadastro {
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px;
   flex-direction: column;
+  justify-content: center;
+  padding: 40px 60px;
+  margin-left: 50px;
 }
 
 .area-cadastro h1 {
-  font-size: 40px;
-  align-self: start;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-.area-cadastro h3{
-  font-size: 25px;
-  align-self: start;
-  font-weight: normal;
+.area-cadastro h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #709897;
+  margin-bottom: 40px;
 }
 
-
-.area-cadastro p{
-  font-size: 17px;
-  align-self: start;
-  display: flex;
-  flex-direction: row;
-}
-
-.area-cadastro p1{
-  font-size: 25px;
-  align-self: start;
-}
-
-.inputs input{
+/* Inputs */
+.inputs {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #E7E2D9;
-  background-color: #F5F0E7;
-  font-family: "Zen Loop", cursive;
-  font-size: 17px;
+  gap: 10px;
+  margin-bottom: 30px;
 }
+
+.inputs p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.inputs input {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #FAF8F5;
+  font-family: "Zen Loop", cursive;
+  font-size: 18px;
+  color: #667;
+}
+
+/* Botão */
 
 .botao {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 8px;
   background-color: #709897;
-  color: #E7E2D9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Zen Loop", cursive;
+  padding: 14px 40px;
+  cursor: pointer;
+  max-width: 400px;
+  width: 100%;
+}
+
+.botao:hover {
+  background-color: #5a7f7e;
+}
+
+/* lado da imagem */
+.lado-imagem {
+  width: 50%;
+  height: 100vh;
+  background: url("../imgs/max_polaroids.jpeg") center no-repeat;
+  background-size: cover;
+}
+
+/* Botões sobre a imagem */
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 20px 30px;
+  gap: 15px;
+}
+
+.botoes p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.botoes .cadastro {
+  background-color: #4a3728;
+  color: #fff;
   text-decoration: none;
+  padding: 10px 20px;
   border-radius: 8px;
   font-size: 14px;
-  padding: 15px 80px;
-  border-color: #709897;
 }
-
-/* polaroid */
-
-.polaroid {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 100px;
-  margin-top: -250px;
-}
-
-.polaroid img {
-  width: 320px;
-  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
-  transform: rotate(5deg);
-
-}
-
-
-
