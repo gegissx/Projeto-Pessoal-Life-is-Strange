@@ -12,57 +12,59 @@ body {
 
 /* header */
 header {
-  background-color: #e7e2d9;
-  height: 80px;
+  background-color: #F5F0E7;
+  padding: 20px 30px;
 }
 
 .navBar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 0 30px;
+  gap: 30px;
 }
 
 .logo{
-  height: 50px;
-  margin-left: 30px;
-  margin-right: 10px;
+  height: 40px;
 }
 
 .menu {
-  margin-left: 30px;
+  display: flex;
+  gap: 25px;
 }
 
 .menu a {
-  margin-left: 10px;
-  text-decoration: none;
+ text-decoration: none;
   color: #331100;
-  font-size: 27px;
+  font-size: 22px
 }
-
 
 /* botões do login e cadastro */
 .botoes {
-  margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 30px;
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
 }
 
-.botoes a {
+.botoes p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.botoes a{
   text-decoration: none;
-  padding: 8px 16px;
+  color: #331100;
+  font-size: 22px
+}
+
+.botoes .cadastro {
+  background-color: #4a3728;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
   border-radius: 8px;
   font-size: 14px;
-}
-
-.login {
-  color: #331100;
-}
-
-.cadastro {
-  background-color: #331100;
-  color: #f5f0e7;
 }
 
 /* inicio */

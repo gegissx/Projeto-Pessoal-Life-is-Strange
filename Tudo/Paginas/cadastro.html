@@ -61,7 +61,7 @@
               placeholder="🔒︎ Insira sua senha"
             />
           </div>
-          <button class="botao" onclick="CriarConta()">Criar conta</button>
+          <button class="botao" onclick="cadastrar()">Criar conta</button>
         </div>
         <div id="texto"></div>
       </div>
@@ -82,7 +82,7 @@
   let ListaNickname = ["teste"];
   let ListaEmail = ["teste"];
 
-  function CriarConta() {
+  function cadastar() {
     let nome = ipt_nome.value;
     let nick = ipt_NickName.value;
     let email = ipt_email.value;
@@ -127,5 +127,44 @@
         }
       }
     }
-  }
+  
+  // Enviando valor das inputs
+    fetch("/usuarios/cadastrar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nomeServer: nomeVar,
+        nickServer: nickname,
+        emailServer: emailVar,
+        senhaServer: senhaVar,
+      }),
+    })
+      .then(function (resposta) {
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
+          cardErro.style.display = "block";
+
+          mensagem_erro.innerHTML =
+            "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+          setTimeout(() => {
+            window.location = "login.html";
+          }, "2000");
+
+          limparFormulario();
+          finalizarAguardar();
+        } else {
+          throw "Houve um erro ao tentar realizar o cadastro!";
+        }
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+        finalizarAguardar();
+      });
+
+    return false;
+    }
 </script>
