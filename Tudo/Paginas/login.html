@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Login - LisBlog</title>
+
+    <!-- fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+
+  <body>
+    <div class="corpo">
+
+
+      <!-- parte do login -->
+      <div class="container">
+        <header>
+          <nav class="navBar">
+            <img class="logo" src="../imgs/Logo.png" alt="LisBlog" />
+            <div class="menu">
+              <a href="./index.html">Home</a>
+              <a href="#">Posts</a>
+              <a href="./sobre.html">Sobre</a>
+            </div>
+          </nav>
+        </header>
+
+         <div class="area-cadastro">
+          <h1>Bem-Vindo de volta!</h1>
+          <h3>Continue sua jornada preenchendo as informações abaixo</h3>
+
+          <div class="inputs">
+            <p>E-mail<span id="erroEmail"></span></p>
+            <input
+              type="text"
+              id="ipt_email"
+              placeholder="✉ Insira seu e-mail"
+            />
+            <p>Senha<span id="erroSenha"></span></p>
+            <input
+              type="password"
+              id="ipt_senha"
+              placeholder="🔒︎ Insira sua senha"
+            />
+          </div>
+          <button class="botao" onclick="autenticar()">Entrar</button>
+        </div>
+        <div id="texto"></div>
+      </div>
+
+      <!-- parte da imagem -->
+      <div class="lado-imagem">
+        <div class="botoes">
+          <p>Ainda não está cadastrado?</p>
+          <a href="./cadastro.html" class="cadastro">Crie sua conta</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<script>
+
+  function autenticar(){
+    let email = ipt_email.value;
+    let senha = ipt_senha.value;
+
+  }
+
+</script>
